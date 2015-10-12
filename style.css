@@ -1,0 +1,293 @@
+
+/******************************************* General Body **********************************/
+
+body{
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 1200px;
+}
+li{
+  overflow: hidden;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+ul li{
+  display: inline-block;
+  margin: 0px auto;
+}
+section{
+  margin: 10px 0px 10px 0px;
+}
+section ul{
+  padding: 0;
+}
+section ul li{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+/**** Skater Names ***/
+h1{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+/*** Blog Headlines ***/
+h3{
+  font-size: 15px;
+  color: black;
+  margin: 0%;
+}
+/*** Contact ***/
+h5{
+  text-align: left;
+  width: 80%;
+  margin: 0;
+}
+/*** Date ***/
+h6{
+  font-size: 9px;
+  color: #757575;
+  margin: 0.5% 0%;
+}
+p{
+  margin: 0;
+  padding: 0;
+  font-family: "Advent Pro";
+  text-align: left;
+  color: #464646;
+  font-size: 13px;
+}
+a{
+  color: red;
+}
+li{
+  display: flex;
+}
+.container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.border{
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+}
+/********************************* Navigation Bar ************************************/
+nav ul li{
+  background-color: #B80000;
+  color: white;
+  font-size: 10px;
+  width: 23%;
+  text-align: center;
+}
+.nav{
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.nav li{
+  width: 45%;
+  margin: 1% 2% 2% 0;
+  padding: 1%;
+}
+.nav li:nth-child(4){
+  margin-right: 0;
+}
+.media{
+  float: right;
+}
+.media li {
+  width: 5%;
+  float: right;
+  margin-left: 2%;
+}
+.media li img{
+  width: 100%;
+  -webkit-filter: grayscale(30%);
+}
+/******************************** Header ********************************************/
+header{
+  width: 99%;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(top-image.png);
+  background-size: 130% auto;
+  background-repeat: no-repeat;
+  background-position: -40px -40px;
+}
+header img:nth-child(1){
+  width: 45%;
+  margin: 2% 10% 15% 1%;
+  -webkit-filter: grayscale(20%);
+}
+.top-img{
+  width: 800px;
+  height: auto;
+  margin-left: -170px;
+}
+.circle{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 15px 0px;
+}
+/******************************* Blog Boxes ***********************************************/
+
+.blogs ul{
+  display: flex;
+  align-items: center;
+  margin: 0%;
+}
+.blogs li{
+  text-align: left;
+}
+.col-3{
+  width: 29%;
+  background-color: white;
+  font-size: 11px;
+  padding: 2%;
+  margin: 0%;
+}
+.mid-col{
+  margin: 0% 0.5%;
+}
+/********************************** Skater Images ***************************************************/
+.pic-sec{
+  display: flex;
+  align-items: center;
+}
+.pic-sec > li{
+  width: 67%;
+  vertical-align: top;
+}
+.big-sec{
+  display: block;
+  margin: 0;
+  vertical-align: top;
+}
+.top-left-pic{
+  width: 100%;
+}
+.top-left-pic li{
+  width: 47%;
+  vertical-align: top;
+  margin-right: 3%;
+  margin: 0 .5% 2% 0;
+  padding: 6% 0% 1% 0%;
+}
+#sk81{
+  width: 98%;
+  padding: 8% 0%;
+  background-image: url(sk8er-1.png);
+  background-size: 100%;
+  background-position: 0px -50px;
+}
+#sk82{
+  background-image: url(sk8er-2.png);
+  background-size: 300%;
+  background-position: 80% 0%;
+  width: 30%;
+  padding: 18% 0 11% 0;
+
+}
+#sk83{
+  background-image: url(sk8er-3.png);
+  background-size: 120%;
+  background-position: 10% 0%;
+}
+#sk84{
+  background-image: url(sk8er-4.png);
+  background-size: 130%;
+  background-position: 70% 0%;
+  margin-right: 1.5%;
+}
+/************************************* Skateboards ******************************************/
+.board-box{
+  background-color: white;
+}
+.board-box li{
+  overflow: visible;
+  width: 8%;
+  margin: 4% 0.5%;
+}
+.board-box li img{
+  width: 99%;
+}
+.board-box li img:hover{
+  transform: scale(1.2);
+  transition: all .5s ease-in-out;
+}
+.board-box li:nth-child(1){
+  margin-left: 2%;
+}
+/******************************************** Contact Form *******************************/
+input{
+  padding: 1%;
+  box-shadow: inset 1px 1px 2px 2px #999999;
+  width: 95%;
+  height: 20px;
+  border: none;
+  float: right;
+  font-size: 10px;
+  margin-left: none;
+}
+.contact{
+  background-color: white;
+  padding-top: 5%;
+}
+.contact li{
+  width: 43%;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 1%;
+  padding: .5%
+}
+.contact > li{
+  margin: 0% 0% 0% 5%;
+  float: left;
+}
+.small-media{
+  width: 35%;
+  float: left;
+  padding-right: 5%;
+}
+.small-media li{
+  width: 15%;
+}
+.small-media li img{
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+}
+.input li{
+  margin: 0 0 2% 0;
+  width: 100%;
+}
+.input li:nth-child(3) input{
+  height: 60px;
+  margin: 0 0 8% 0;
+}
+#contact{
+  background-color: white;
+}
+#submit{
+  background-color: #B82E00;
+  color: white;
+  box-shadow: none;
+  width: 70%;
+  height: 30px;
+  float: right;
+  border-style: none;
+}
