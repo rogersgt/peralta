@@ -1,0 +1,58 @@
+/******************************************** Contact Form *******************************/
+input{
+  padding: 2%;
+  box-shadow: inset 1px 1px 2px 2px #999999;
+  width: 95%;
+  height: 20px;
+  border: none;
+  float: right;
+  font-size: 10px;
+  margin-left: none;
+}
+.contact{
+  background-color: white;
+  padding-top: 5%;
+}
+.contact li{
+  width: 43%;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 1%;
+  padding: .5%
+}
+.contact > li{
+  margin: 0% 0% 0% 5%;
+  float: left;
+}
+.small-media{
+  width: 35%;
+  float: left;
+  padding-right: 5%;
+}
+.small-media li{
+  width: 15%;
+}
+.small-media li img{
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+}
+.input li{
+  margin: 0 0 2% 0;
+  width: 100%;
+}
+.input li:nth-child(3) input{
+  height: 60px;
+  margin: 0 0 8% 0;
+}
+#contact{
+  background-color: white;
+}
+#submit{
+  background-color: $Red;
+  color: white;
+  box-shadow: none;
+  width: 70%;
+  height: 30px;
+  float: right;
+  border-style: none;
+}

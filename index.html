@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Advent+Pro:300' rel=
     'stylesheet' type='text/css'>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+    <link href="style-comp.css" rel="stylesheet" type="text/css">
+  <!--  <script type="text/javascript">
+      function open(){
+        var list = getElementById('drop')
 
-    <title></title>
+        if(list.style.display === "none"){
+          list.style.display === "block";}
+          else {list.style.display === "none;"}
+
+      }
+    </script> -->
+    <title>Peralta</title>
 </head>
 
 <body>
     <div class="background"></div>
 
-    <div class="container">
+    <div id="container">
         <ul class="media">
             <li></li>
 
@@ -35,8 +45,16 @@
 
                 <li>CONTACT US</li>
             </ul>
+            <div class="alt-nav">
+            <i class="fa fa-bars"></i>
+              <ul id="drop">
+                <li><a href="">SKBT NEWS</a></li>
+                <li><a href="">SKATEBOARDERS</a></li>
+                <li><a href="">BOARD DESIGN</a></li>
+                <li><a href="">CONTACT US</a></li>
+              </ul>
+            </div>
         </nav>
-
         <header class="border">
             <img alt="" src="assets/peralta-logo.png">
         </header>
@@ -128,8 +146,14 @@
                 <h1>TOMMY GUERRERO</h1>
             </li>
         </ul>
-
+        <ul class="alt-pics">
+          <li class="border"><h1>LANCE MOUNTAIN</h1></li>
+          <li class="border"><h1>RODNEY MULLEN</h1></li>
+          <li class="border"><h1>TOMMY GUERRERO</h1></li>
+          <li class="border"><h1>STEVE CABALLERO</h1></li>
+        </ul>
         <section>
+          <span>
             <ul class="board-box">
                 <li><img alt="" src="assets/sk8-1.png"></li>
 
@@ -151,6 +175,7 @@
 
                 <li><img alt="" src="assets/sk8-10.png"></li>
             </ul>
+          </span>
         </section><!--Contact Form -->
 
         <section>

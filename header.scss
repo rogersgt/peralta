@@ -1,0 +1,69 @@
+/********************************* Navigation Bar ************************************/
+nav ul li{
+  background-color: $Red;
+  color: white;
+  font-size: 10px;
+  width: 23%;
+  text-align: center;
+}
+.nav{
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.alt-nav, #drop{
+  display: none;
+}
+.nav li{
+  width: 45%;
+  margin: 1% 2% 2% 0;
+  padding: 1%;
+}
+.nav li:nth-child(4){
+  margin-right: 0;
+}
+.media{
+  float: right;
+}
+.media li {
+  width: 5%;
+  float: right;
+  margin-left: 2%;
+}
+.media li img{
+  width: 100%;
+  -webkit-filter: grayscale(30%);
+  box-shadow: 0px 3px 0px 1px rgb(178, 178, 178);
+}
+/******************************** Header ********************************************/
+header{
+  width: 99%;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(assets/top-image.png);
+  background-size: 130% auto;
+  background-repeat: no-repeat;
+  background-position: -40px -40px;
+}
+header img:nth-child(1){
+  width: 45%;
+  margin: 2% 10% 15% 1%;
+  -webkit-filter: grayscale(20%);
+}
+.top-img{
+  width: 800px;
+  height: auto;
+  margin-left: -170px;
+}
+.circle{
+  width: 50%;
+  margin-left: 48%;
+}
+.circle li{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 15px 0px;
+}

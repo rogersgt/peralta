@@ -1,0 +1,120 @@
+/************************************* First Break Point ********************************************/
+@media (max-width: 1100px) {
+  /************** Header ***********/
+
+  /************** Body *************/
+    .pic-sec{
+      display: none;
+     }
+    .alt-pics{
+      display: inline-block;
+    li{
+      display: flex;
+      margin: 1% 0;
+      background-size: cover;
+      background-position: center;
+     &:nth-child(1) {
+      background-image: url(assets/sk8er-4.png);
+     }
+     &:nth-child(2){
+      background-image: url(assets/sk8er-3.png);
+     }
+     &:nth-child(3){
+       background-image: url(assets/sk8er-2.png);
+       background-size: 140%;
+     }
+     &:nth-child(4){
+       background-image: url(assets/sk8er-1.png);
+     }
+   }
+   h1{
+     padding: 11% 0% 5% 21%;
+     text-shadow: 1px 1px 2px black;
+   }
+  }
+/************ Footer ************/
+   .small-media{
+    display: none;
+   }
+}
+/************************************ Second Break Point *********************************************/
+@media (max-width: 853px){
+  /*********** Header ************/
+  header img:nth-child(1){
+     margin-top: 10%;
+  }
+  /*********** Blogs *************/
+    .blogs ul{
+      display: block;
+    }
+    .blogs ul li{
+      width: 100%;
+      margin: 2% 0;
+    }
+  /*********** Boards ***********/
+   @-webkit-keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+  .board-box{
+    // height: 25em;
+    height: 45vh;
+    overflow: hidden;
+    animation: 30s slidy infinite;
+    transition: all 1s;
+  }
+ .board-box li, .board-box li:nth-child(1){
+   margin-left: 13%;
+   width: 10vh;
+ }
+ /*********** Contact Form ************/
+
+}
+/************************************* Third Break Point ********************************************/
+@media (max-width: 649px){
+  #container{
+    width: 100%;
+  }
+  /******** Navigation *********/
+  .nav{
+    display: none;
+  }
+  i{
+    background-color: $Red;
+    color: white;
+    padding: 2% 0 2% 1%;
+  }
+  .media{
+    position: absolute;
+    width: 130%;
+    right: 2em;
+  }
+  .media li img{
+    box-shadow: none;
+  }
+  .drop{
+    display: block;
+    &li{
+      width: 100%;
+    }
+  }
+  .alt-nav{
+    display: flex;
+    background-color: $Red;
+    width: 100%;
+  }
+ /******** Header ************/
+ header img:nth-child(1){
+    margin-top: 4%;
+ }
+ /******** Contact Form *******/
+   .contact li{
+     width: 100%;
+   }

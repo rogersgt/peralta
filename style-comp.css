@@ -1,0 +1,757 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"], input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/********************************* Navigation Bar ************************************/
+nav ul li {
+  background-color: #B80000;
+  color: white;
+  font-size: 10px;
+  width: 23%;
+  text-align: center; }
+
+.nav {
+  padding: 0px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; }
+
+.alt-nav, #drop {
+  display: none; }
+
+.nav li {
+  width: 45%;
+  margin: 1% 2% 2% 0;
+  padding: 1%; }
+
+.nav li:nth-child(4) {
+  margin-right: 0; }
+
+.media {
+  float: right; }
+
+.media li {
+  width: 5%;
+  float: right;
+  margin-left: 2%; }
+
+.media li img {
+  width: 100%;
+  -webkit-filter: grayscale(30%);
+  box-shadow: 0px 3px 0px 1px #b2b2b2; }
+
+/******************************** Header ********************************************/
+header {
+  width: 99%;
+  height: 200px;
+  overflow: hidden;
+  background-image: url(assets/top-image.png);
+  background-size: 130% auto;
+  background-repeat: no-repeat;
+  background-position: -40px -40px; }
+
+header img:nth-child(1) {
+  width: 45%;
+  margin: 2% 10% 15% 1%;
+  -webkit-filter: grayscale(20%); }
+
+.top-img {
+  width: 800px;
+  height: auto;
+  margin-left: -170px; }
+
+.circle {
+  width: 50%;
+  margin-left: 48%; }
+
+.circle li {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 15px 0px; }
+
+/******************************* Blog Boxes ***********************************************/
+.blogs ul {
+  display: flex;
+  align-items: center;
+  margin: 0%; }
+
+.blogs li {
+  text-align: left; }
+
+.col-3 {
+  width: 29%;
+  background-color: white;
+  font-size: 11px;
+  padding: 2%;
+  margin: 0%; }
+
+.mid-col {
+  margin: 0% 0.5%; }
+
+/********************************** Skater Images ***************************************************/
+.pic-sec {
+  display: flex;
+  align-items: center; }
+
+.alt-pics {
+  display: none; }
+
+.pic-sec > li {
+  width: 67%;
+  vertical-align: top; }
+
+.big-sec {
+  display: block;
+  margin: 0;
+  vertical-align: top; }
+
+.top-left-pic {
+  width: 100%; }
+
+.top-left-pic li {
+  width: 47%;
+  vertical-align: top;
+  margin-right: 3%;
+  margin: 0 .5% 2% 0;
+  padding: 6% 0% 1% 0%; }
+
+#sk81 {
+  width: 98%;
+  padding: 8% 0%;
+  background-image: url(assets/sk8er-1.png);
+  background-size: 100%;
+  background-position: 0px -50px; }
+
+#sk82 {
+  background-image: url(assets/sk8er-2.png);
+  background-size: 300%;
+  background-position: 80% 0%;
+  width: 30%;
+  padding: 18% 0 11% 0; }
+
+#sk83 {
+  background-image: url(assets/sk8er-3.png);
+  background-size: 120%;
+  background-position: 10% 0%; }
+
+#sk84 {
+  background-image: url(assets/sk8er-4.png);
+  background-size: 130%;
+  background-position: 70% 0%;
+  margin-right: 1.5%; }
+
+/************************************* Skateboards ******************************************/
+.board-box {
+  background-color: white; }
+
+.board-box li {
+  overflow: visible;
+  width: 8%;
+  margin: 4% 0.5%; }
+
+.board-box li img {
+  width: 99%; }
+
+.board-box li img:hover {
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out; }
+
+.board-box li:nth-child(1) {
+  margin-left: 2%; }
+
+/******************************************** Contact Form *******************************/
+input {
+  padding: 2%;
+  box-shadow: inset 1px 1px 2px 2px #999999;
+  width: 95%;
+  height: 20px;
+  border: none;
+  float: right;
+  font-size: 10px;
+  margin-left: none; }
+
+.contact {
+  background-color: white;
+  padding-top: 5%; }
+
+.contact li {
+  width: 43%;
+  height: 100%;
+  vertical-align: middle;
+  margin-left: 1%;
+  padding: .5%; }
+
+.contact > li {
+  margin: 0% 0% 0% 5%;
+  float: left; }
+
+.small-media {
+  width: 35%;
+  float: left;
+  padding-right: 5%; }
+
+.small-media li {
+  width: 15%; }
+
+.small-media li img {
+  width: 100%;
+  -webkit-filter: grayscale(100%); }
+
+.input li {
+  margin: 0 0 2% 0;
+  width: 100%; }
+
+.input li:nth-child(3) input {
+  height: 60px;
+  margin: 0 0 8% 0; }
+
+#contact {
+  background-color: white; }
+
+#submit {
+  background-color: #B80000;
+  color: white;
+  box-shadow: none;
+  width: 70%;
+  height: 30px;
+  float: right;
+  border-style: none; }
+
+/******************************************* General Body **********************************/
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+li {
+  overflow: hidden;
+  vertical-align: top;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+ul li {
+  display: inline-block;
+  margin: 0px auto; }
+
+section {
+  margin: 10px 0px 10px 0px; }
+
+section ul {
+  padding: 0; }
+
+section ul li {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0; }
+
+/**** Skater Names ***/
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px; }
+
+/*** Blog Headlines ***/
+h3 {
+  font-size: 15px;
+  color: black;
+  margin: 0%; }
+
+/*** Contact ***/
+h5 {
+  text-align: left;
+  width: 80%;
+  margin: 0; }
+
+/*** Date ***/
+h6 {
+  font-size: 9px;
+  color: #757575;
+  margin: 0.5% 0%; }
+
+p {
+  margin: 0;
+  padding: 0;
+  font-family: "Advent Pro";
+  text-align: left;
+  color: #464646;
+  font-size: 13px; }
+
+a {
+  color: red; }
+
+li {
+  display: flex; }
+
+.border {
+  border-style: solid;
+  border-width: medium;
+  border-color: white; }
+
+#container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 auto; }
+
+/************************************* First Break Point ********************************************/
+@media (max-width: 1100px) {
+  /************** Header ***********/
+  /************** Body *************/
+  .pic-sec {
+    display: none; }
+  .alt-pics {
+    display: inline-block; }
+    .alt-pics li {
+      display: flex;
+      margin: 1% 0;
+      background-size: cover;
+      background-position: center; }
+      .alt-pics li:nth-child(1) {
+        background-image: url(assets/sk8er-4.png); }
+      .alt-pics li:nth-child(2) {
+        background-image: url(assets/sk8er-3.png); }
+      .alt-pics li:nth-child(3) {
+        background-image: url(assets/sk8er-2.png);
+        background-size: 140%; }
+      .alt-pics li:nth-child(4) {
+        background-image: url(assets/sk8er-1.png); }
+    .alt-pics h1 {
+      padding: 11% 0% 5% 21%;
+      text-shadow: 1px 1px 2px black; }
+  /************ Footer ************/
+  .small-media {
+    display: none; } }
+
+/************************************ Second Break Point *********************************************/
+@media (max-width: 853px) {
+  /*********** Header ************/
+  header img:nth-child(1) {
+    margin-top: 10%; }
+  /*********** Blogs *************/
+  .blogs ul {
+    display: block; }
+  .blogs ul li {
+    width: 100%;
+    margin: 2% 0; }
+  /*********** Boards ***********/
+  @-webkit-keyframes slidy {
+    0% {
+      left: 0%; }
+    20% {
+      left: 0%; }
+    25% {
+      left: -100%; }
+    45% {
+      left: -100%; }
+    50% {
+      left: -200%; }
+    70% {
+      left: -200%; }
+    75% {
+      left: -300%; }
+    95% {
+      left: -300%; }
+    100% {
+      left: -400%; } }
+  .board-box {
+    height: 45vh;
+    overflow: hidden;
+    animation: 30s slidy infinite;
+    transition: all 1s; }
+  .board-box li, .board-box li:nth-child(1) {
+    margin-left: 13%;
+    width: 10vh; }
+  /*********** Contact Form ************/ }
+
+/************************************* Third Break Point ********************************************/
+@media (max-width: 649px) {
+  #container {
+    width: 100%; }
+  /******** Navigation *********/
+  .nav {
+    display: none; }
+  i {
+    background-color: #B80000;
+    color: white;
+    padding: 2% 0 2% 1%; }
+  .media {
+    position: absolute;
+    width: 130%;
+    right: 2em; }
+  .media li img {
+    box-shadow: none; }
+  .drop {
+    display: block; }
+    .dropli {
+      width: 100%; }
+  .alt-nav {
+    display: flex;
+    background-color: #B80000;
+    width: 100%; }
+  /******** Header ************/
+  header img:nth-child(1) {
+    margin-top: 4%; }
+  /******** Contact Form *******/
+  .contact li {
+    display: block; } }

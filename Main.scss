@@ -1,0 +1,84 @@
+/******************************************* General Body **********************************/
+
+body{
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+li{
+  overflow: hidden;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+ul li{
+  display: inline-block;
+  margin: 0px auto;
+}
+section{
+  margin: 10px 0px 10px 0px;
+}
+section ul{
+  padding: 0;
+}
+section ul li{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+/**** Skater Names ***/
+h1{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+/*** Blog Headlines ***/
+h3{
+  font-size: 15px;
+  color: black;
+  margin: 0%;
+}
+/*** Contact ***/
+h5{
+  text-align: left;
+  width: 80%;
+  margin: 0;
+}
+/*** Date ***/
+h6{
+  font-size: 9px;
+  color: $dateColor;
+  margin: 0.5% 0%;
+}
+p{
+  margin: 0;
+  padding: 0;
+  font-family: "Advent Pro";
+  text-align: left;
+  color: #464646;
+  font-size: 13px;
+}
+a{
+  color: red;
+}
+li{
+  display: flex;
+}
+.border{
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+}
+#container {
+  width: 55%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
