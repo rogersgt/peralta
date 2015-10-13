@@ -2,11 +2,11 @@
 /******************************************* General Body **********************************/
 
 body{
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  min-width: 1200px;
+
 }
 li{
   overflow: hidden;
@@ -116,13 +116,14 @@ nav ul li{
 .media li img{
   width: 100%;
   -webkit-filter: grayscale(30%);
+  box-shadow: 0px 3px 0px 1px rgb(178, 178, 178, 0.12);
 }
 /******************************** Header ********************************************/
 header{
   width: 99%;
   height: 200px;
   overflow: hidden;
-  background-image: url(top-image.png);
+  background-image: url(assets/top-image.png);
   background-size: 130% auto;
   background-repeat: no-repeat;
   background-position: -40px -40px;
@@ -138,6 +139,10 @@ header img:nth-child(1){
   margin-left: -170px;
 }
 .circle{
+  width: 50%;
+  margin-left: 48%;
+}
+.circle li{
   width: 10px;
   height: 10px;
   border-radius: 10px;
@@ -191,12 +196,12 @@ header img:nth-child(1){
 #sk81{
   width: 98%;
   padding: 8% 0%;
-  background-image: url(sk8er-1.png);
+  background-image: url(assets/sk8er-1.png);
   background-size: 100%;
   background-position: 0px -50px;
 }
 #sk82{
-  background-image: url(sk8er-2.png);
+  background-image: url(assets/sk8er-2.png);
   background-size: 300%;
   background-position: 80% 0%;
   width: 30%;
@@ -204,12 +209,12 @@ header img:nth-child(1){
 
 }
 #sk83{
-  background-image: url(sk8er-3.png);
+  background-image: url(assets/sk8er-3.png);
   background-size: 120%;
   background-position: 10% 0%;
 }
 #sk84{
-  background-image: url(sk8er-4.png);
+  background-image: url(assets/sk8er-4.png);
   background-size: 130%;
   background-position: 70% 0%;
   margin-right: 1.5%;
@@ -235,7 +240,7 @@ header img:nth-child(1){
 }
 /******************************************** Contact Form *******************************/
 input{
-  padding: 1%;
+  padding: 2%;
   box-shadow: inset 1px 1px 2px 2px #999999;
   width: 95%;
   height: 20px;
@@ -290,4 +295,13 @@ input{
   height: 30px;
   float: right;
   border-style: none;
+}
+/************************************* Media ********************************************/
+@media (max-width: 800px) {
+  .pic-sec li{
+    width: 100%;
+  }
+  .pic-sec ul li{
+    display: block;
+  }
 }
