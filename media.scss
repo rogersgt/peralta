@@ -1,5 +1,6 @@
+@import "variables.scss";
 /************************************* First Break Point ********************************************/
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   /************** Header ***********/
 
   /************** Body *************/
@@ -86,35 +87,125 @@
   .nav{
     display: none;
   }
-  i{
-    background-color: $Red;
+  nav{
+    flex: auto;
+  }
+  .fa{
     color: white;
-    padding: 2% 0 2% 1%;
+    background-color: #3D3D3D;
+    font-size: 2.3em;
+    padding: .2em;
+    margin: .2em 0 .2em .1em;
+    border-radius: .2em;
   }
   .media{
     position: absolute;
-    width: 130%;
+    width: 10em;
     right: 2em;
+    padding-top: .25em;
   }
-  .media li img{
+  .media li, .media li img{
     box-shadow: none;
-  }
-  .drop{
-    display: block;
-    &li{
-      width: 100%;
-    }
+    width: 2em;
+    border-radius: .2em;
   }
   .alt-nav{
-    display: flex;
-    background-color: $Red;
+    display: block;
+    overflow: hidden;
+    height: 3em;
+    width: 100%;
+    transition: all .8s;
+  }
+  .alt-nav li{
     width: 100%;
   }
+   #drop{
+    visibility: hidden;
+    width: 80%;
+    border-radius: .2em;
+    padding: .2em;
+    font-size: 2em;
+  }
+  .alt-nav:hover{
+    height: 11em;
+    #drop{
+      visibility: visible;
+      background-color: $Red;
+      font-size: 3em;
+      margin: .2em 0;
+      & hr{
+        margin: .1em;
+      }
+    }
+  }
  /******** Header ************/
+ header{
+    width: 100%;
+  }
  header img:nth-child(1){
     margin-top: 4%;
  }
- /******** Contact Form *******/
-   .contact li{
+ /******** Skater Bros *******/
+   .alt-pics{
      width: 100%;
    }
+/*********** Blogs ************/
+  .blogs{
+    width: 100%;
+  }
+  .mid-col{
+    padding-right: 0;
+    margin-right: 0;
+     &h3, &p, &h6{
+      width:80%;
+      }
+  }
+  /********************************** Boards ***************************************************/
+  .board-box li{
+    //  margin: .5em;
+  }
+  .board-box li:nth-child(1), .margin li{
+    // margin-left: 3%;
+  }
+ /******** Contact Form *******/
+   .contact{
+    h5{
+      width: 30%;
+      font-size: 1.2em;
+    }
+    p{
+      display: none;
+    }
+   }
+}
+/******************************************* Fourth Break Point ***********************************/
+@media (max-width: 460px) {
+  h3{
+    width: 50%;
+  }
+  p{
+    padding-right: .2em;
+  }
+  header img:nth-child(1){
+     margin-top: 11%;
+     margin-bottom: 0;
+  }
+}
+/**************************************** Fifth Break Point ***************************************/
+@media (max-width: 320px) {
+  body{
+    min-width: 13.625em
+  }
+  .board-box{
+    // display: none;
+  }
+  header{
+    background-size: 200%;
+    background-position: -6em -2em;
+  }
+  header img:nth-child(1){
+     margin-top: 18%;
+     margin-bottom: 0;
+     width: 50%;
+  }
+}

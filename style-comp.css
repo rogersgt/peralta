@@ -369,8 +369,11 @@ nav ul li {
   display: flex;
   align-items: center; }
 
-.alt-nav, #drop {
+.alt-nav {
   display: none; }
+
+.alt-nav ul li {
+  text-align: left; }
 
 .nav li {
   width: 45%;
@@ -392,6 +395,14 @@ nav ul li {
   width: 100%;
   -webkit-filter: grayscale(30%);
   box-shadow: 0px 3px 0px 1px #b2b2b2; }
+
+#drop li {
+  display: block;
+  margin-left: 0%; }
+
+#drop a {
+  text-decoration: none;
+  color: white; }
 
 /******************************** Header ********************************************/
 header {
@@ -644,6 +655,10 @@ a {
 li {
   display: flex; }
 
+hr {
+  padding: 0;
+  margin: 0; }
+
 .border {
   border-style: solid;
   border-width: medium;
@@ -655,7 +670,7 @@ li {
   padding: 0 auto; }
 
 /************************************* First Break Point ********************************************/
-@media (max-width: 1100px) {
+@media (max-width: 1150px) {
   /************** Header ***********/
   /************** Body *************/
   .pic-sec {
@@ -731,27 +746,89 @@ li {
   /******** Navigation *********/
   .nav {
     display: none; }
-  i {
-    background-color: #B80000;
+  nav {
+    flex: auto; }
+  .fa {
     color: white;
-    padding: 2% 0 2% 1%; }
+    background-color: #3D3D3D;
+    font-size: 2.3em;
+    padding: .2em;
+    margin: 0.2em 0 0.2em 0.1em;
+    border-radius: .2em; }
   .media {
     position: absolute;
-    width: 130%;
-    right: 2em; }
-  .media li img {
-    box-shadow: none; }
-  .drop {
-    display: block; }
-    .dropli {
-      width: 100%; }
+    width: 10em;
+    right: 2em;
+    padding-top: .25em; }
+  .media li, .media li img {
+    box-shadow: none;
+    width: 2em;
+    border-radius: .2em; }
   .alt-nav {
-    display: flex;
-    background-color: #B80000;
+    display: block;
+    overflow: hidden;
+    height: 3em;
+    width: 100%;
+    transition: all 0.8s; }
+  .alt-nav li {
     width: 100%; }
+  #drop {
+    visibility: hidden;
+    width: 80%;
+    border-radius: .2em;
+    padding: .2em;
+    font-size: 2em; }
+  .alt-nav:hover {
+    height: 11em; }
+    .alt-nav:hover #drop {
+      visibility: visible;
+      background-color: #B80000;
+      font-size: 3em;
+      margin: .2em 0; }
+      .alt-nav:hover #drop hr {
+        margin: .1em; }
   /******** Header ************/
+  header {
+    width: 100%; }
   header img:nth-child(1) {
     margin-top: 4%; }
+  /******** Skater Bros *******/
+  .alt-pics {
+    width: 100%; }
+  /*********** Blogs ************/
+  .blogs {
+    width: 100%; }
+  .mid-col {
+    padding-right: 0;
+    margin-right: 0; }
+    .mid-colh3, .mid-colp, .mid-colh6 {
+      width: 80%; }
+  /********************************** Boards ***************************************************/
   /******** Contact Form *******/
-  .contact li {
-    display: block; } }
+  .contact h5 {
+    width: 30%;
+    font-size: 1.2em; }
+  .contact p {
+    display: none; } }
+
+/******************************************* Fourth Break Point ***********************************/
+@media (max-width: 460px) {
+  h3 {
+    width: 50%; }
+  p {
+    padding-right: .2em; }
+  header img:nth-child(1) {
+    margin-top: 11%;
+    margin-bottom: 0; } }
+
+/**************************************** Fifth Break Point ***************************************/
+@media (max-width: 320px) {
+  body {
+    min-width: 13.625em; }
+  header {
+    background-size: 200%;
+    background-position: -6em -2em; }
+  header img:nth-child(1) {
+    margin-top: 18%;
+    margin-bottom: 0;
+    width: 50%; } }
