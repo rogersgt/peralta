@@ -702,7 +702,8 @@ hr {
 @media (max-width: 853px) {
   /*********** Header ************/
   header img:nth-child(1) {
-    margin-top: 10%; }
+    margin-top: 10%;
+    width: 50%; }
   /*********** Blogs *************/
   .blogs ul {
     display: block; }
@@ -803,7 +804,7 @@ hr {
     margin-right: 0; }
     .mid-colh3, .mid-colp, .mid-colh6 {
       width: 80%; }
-  /********************************** Boards ***************************************************/
+  /**************** Boards *********************/
   /******** Contact Form *******/
   .contact h5 {
     width: 30%;
